@@ -1,0 +1,13 @@
+document.getElementById('resume-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const industry = document.getElementById('industry').value;
+    const jobRole = document.getElementById('job-role').value;
+    const skills = document.getElementById('skills').value;
+    const experience = document.getElementById('experience').value;
+
+    if (industry && jobRole && skills && experience) {
+        alert('Resume generation is currently a mockup. This will be replaced with AI functionality.');
+    } else {
+        alert('Please fill in all fields.');
+    }
+});

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResuMate - Craft Your Dream Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-500 p-4 flex justify-between items-center">
+        <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-eeM7RLe3Wv2HZ7Toub47POas/user-rnGwZEmjnwoUoF8lEvadvt0O/img-Q0KZaOk58MXlfiMPKyoNmB8c.png?st=2025-08-05T22%3A49%3A28Z&se=2025-08-06T00%3A49%3A28Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=cc612491-d948-4d2e-9821-2683df3719f5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-05T23%3A49%3A28Z&ske=2025-08-06T23%3A49%3A28Z&sks=b&skv=2024-08-04&sig=J9Ylw9zZWHpnbc3LJ8GTnHT%2BI6KyMqpB/a2dqhe6Z%2B4%3D" alt="ResuMate Logo" class="h-10">
+        <h1 class="text-white text-xl">ResuMate</h1>
+    </header>
+    <main class="container mx-auto p-6">
+        <section class="text-center mb-8">
+            <h2 class="text-3xl font-bold mb-4">Craft Your Dream Resume with AI Precision</h2>
+            <p class="text-lg">Let AI help you create a personalized resume that stands out.</p>
+        </section>
+        <section class="bg-white p-6 rounded shadow-md">
+            <form id="resume-form">
+                <div class="mb-4">
+                    <label for="industry" class="block text-sm font-medium text-gray-700">Industry</label>
+                    <input type="text" id="industry" name="industry" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                </div>
+                <div class="mb-4">
+                    <label for="job-role" class="block text-sm font-medium text-gray-700">Job Role</label>
+                    <input type="text" id="job-role" name="job-role" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                </div>
+                <div class="mb-4">
+                    <label for="skills" class="block text-sm font-medium text-gray-700">Skills</label>
+                    <input type="text" id="skills" name="skills" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                </div>
+                <div class="mb-4">
+                    <label for="experience" class="block text-sm font-medium text-gray-700">Experience</label>
+                    <textarea id="experience" name="experience" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-teal-600">Generate Resume</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2023 ResuMate. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
